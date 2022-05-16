@@ -39,7 +39,7 @@ jobs:
             SONAR_ORG_KEY: ${{ secrets.SONAR_ORG_KEY }}
             
       - name: ServiceNow DevOps Sonar Scan Results
-        uses: velivalab/servicenow-devops-sonar@master
+        uses: vivek-kaushik55946/SampleRepoGitHubAction@master
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
