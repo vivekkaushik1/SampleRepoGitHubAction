@@ -151,8 +151,7 @@ Public Function CreateKey(ByVal hKey As RegistryHKeyConstants, _
     
     CreateKey = False
     
-    /*lRC = RegCreateKeyEx(hKey, Path, 0, "", Volatile, Access, saKey, Key, Disposition)*/
-    lRC = RegCreateKeyEx(hKey, Path, 0, Volatile, Access, saKey, Key, Disposition)          
+    lRC = RegCreateKeyEx(hKey, Path, 0, "", Volatile, Access, saKey, Key, Disposition)         
     If lRC = ERROR_SUCCESS Then
         CreateKey = True
     Else
