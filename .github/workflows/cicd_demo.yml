@@ -3,6 +3,8 @@ name: cicd_demo
 on:
   push:
     branches: ['feature/workflows']
+  schedule:
+    - cron: '1 * * * *'
   pull_request:
     branches: ['master']
   workflow_dispatch:
