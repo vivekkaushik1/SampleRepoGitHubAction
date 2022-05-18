@@ -52,8 +52,7 @@ jobs:
           sonar-org-key: ${{ secrets.SONAR_ORG_KEY }}
       
       - name: Run JUnit Tests
-        # run: mvn test -Dmaven.test.failure.ignore=true surefire-report:report
-        run: mvn test
+        run: mvn test -Dmaven.test.failure.ignore=true surefire-report:report
         
       - name: ServiceNow DevOps Unit Test Results
         uses: velivalab/servicenow-devops-test-report@master
