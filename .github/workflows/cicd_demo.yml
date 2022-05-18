@@ -2,7 +2,7 @@ name: cicd_demo
     
 on:
   schedule:
-    - cron: 5 * * * *
+    - cron: 55 * * * *
   workflow_dispatch:
 
 jobs:
