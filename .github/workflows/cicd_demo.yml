@@ -37,7 +37,7 @@ jobs:
             SONAR_ORG_KEY: ${{ secrets.SONAR_ORG_KEY }}
             
       - name: ServiceNow DevOps Sonar Scan Results
-        uses: ServiceNow/servicenow-devops-sonar@master
+        uses: ServiceNow/servicenow-devops-sonar@main
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
