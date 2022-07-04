@@ -1,10 +1,8 @@
 name: cicd_demo_without_change
     
 on:
-  push:
-    branches: ['feature/workflows']
-  pull_request:
-    branches: ['master']
+  schedule:
+    - cron: 5 * * * *
   workflow_dispatch:
 
 jobs:
