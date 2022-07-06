@@ -2,7 +2,7 @@ name: change_env
 
 on:
   schedule:
-    - cron: 15 * 1 * *
+    - cron: 15 * * * *
   workflow_dispatch:
 
 jobs:
