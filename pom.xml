@@ -14,7 +14,14 @@
 			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>
-
+		
+		<dependency>
+ 		 	<groupId>org.seleniumhq.selenium</groupId>
+  			<artifactId>selenium-chrome-driver</artifactId>
+  			<version>LATEST_COMPATIBLE_VERSION</version>
+  			<scope>test</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
