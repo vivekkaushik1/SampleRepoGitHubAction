@@ -37,7 +37,7 @@ jobs:
             SONAR_ORG_KEY: ${{ secrets.SONAR_ORG_KEY }}
             
       - name: ServiceNow DevOps Sonar Scan Results
-        uses: velivalab/servicenow-devops-sonar@master
+        uses: ServiceNow/servicenow-devops-sonar@master
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -53,7 +53,7 @@ jobs:
         run: mvn test -Dmaven.test.failure.ignore=true surefire-report:report
         
       - name: ServiceNow DevOps Unit Test Results
-        uses: velivalab/servicenow-devops-test-report@master
+        uses: ServiceNow/servicenow-devops-test-report@master
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -69,7 +69,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
       - name: Register Artifact
-        uses: velivalab/servicenow-devops-register-artifact@master
+        uses: ServiceNow/servicenow-devops-register-artifact@master
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -80,7 +80,7 @@ jobs:
           artifacts: ' [{"name": "com:autoclaim","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
 
       - name: Register Package
-        uses: velivalab/servicenow-devops-register-package@master
+        uses: ServiceNow/servicenow-devops-register-package@master
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
