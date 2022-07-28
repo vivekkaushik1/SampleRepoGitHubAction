@@ -46,7 +46,11 @@ public class secondTest {
 	}
 	@Test
 	public void test5() {
-		assertTrue(true, "test is passed");
+	
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
 	}
 	@Test
 	public void test7() {
