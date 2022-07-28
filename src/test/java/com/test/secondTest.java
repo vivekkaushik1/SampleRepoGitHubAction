@@ -19,7 +19,7 @@ public class secondTest {
 
 		Assert.assertTrue(true, "test is passed");
 	}
-	@Test
+/*	@Test
 	public void test3() {
 
 		for (int i = 0; i < 3; i++)
@@ -172,7 +172,7 @@ public class secondTest {
 			System.out.print("test summaries....");
 
 		Assert.assertTrue(true, "test is passed");
-	}	
+	}*/	
 	@Test
 	public void testskipped() {
 		throw new SkipException("skipped");
