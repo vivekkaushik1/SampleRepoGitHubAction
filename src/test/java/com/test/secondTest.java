@@ -27,14 +27,7 @@ public class secondTest {
 
 		Assert.assertTrue(true, "test is passed");
 	}
-	@Test
-	public void test4() {
 
-		for (int i = 0; i < 3; i++)
-			System.out.print("test summaries....");
-
-		Assert.assertTrue(true, "test is passed");
-	}
 	@Test
 	public void test4() {
 
@@ -135,6 +128,47 @@ public class secondTest {
 
 		Assert.assertTrue(true, "test is passed");
 	}
+	@Test
+	public void test16() {
+
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
+	}
+
+	@Test
+	public void test17() {
+
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
+	}	
+	@Test
+	public void test18() {
+
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
+	}
+	@Test
+	public void test19() {
+
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
+	}	
+	@Test
+	public void test20() {
+
+		for (int i = 0; i < 3; i++)
+			System.out.print("test summaries....");
+
+		Assert.assertTrue(true, "test is passed");
+	}	
 	@Test
 	public void testskipped() {
 		throw new SkipException("skipped");
