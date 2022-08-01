@@ -37,7 +37,7 @@ jobs:
             SONAR_ORG_KEY: ${{ secrets.SONAR_ORG_KEY }}
             
       - name: ServiceNow DevOps Sonar Scan Results
-        uses: ServiceNow/servicenow-devops-sonar@1.34.2
+        uses: ServiceNow/servicenow-devops-sonar@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -53,7 +53,7 @@ jobs:
         run: mvn test -Dmaven.test.failure.ignore=true surefire-report:report
         
       - name: ServiceNow DevOps Unit Test Results
-        uses: ServiceNow/servicenow-devops-test-report@1.34.2
+        uses: ServiceNow/servicenow-devops-test-report@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -70,7 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
       - name: Register Artifact
-        uses: ServiceNow/servicenow-devops-register-artifact@1.34.2
+        uses: ServiceNow/servicenow-devops-register-artifact@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -81,7 +81,7 @@ jobs:
           artifacts: ' [{"name": "com:autoclaim","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
 
       - name: Register Package
-        uses: ServiceNow/servicenow-devops-register-package@1.34.2
+        uses: ServiceNow/servicenow-devops-register-package@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
       - name: Custom Change
-        uses: ServiceNow/servicenow-devops-change@1.34.2
+        uses: ServiceNow/servicenow-devops-change@v1.34.2
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
