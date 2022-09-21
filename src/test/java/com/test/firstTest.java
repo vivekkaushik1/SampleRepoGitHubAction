@@ -21,7 +21,7 @@ public class firstTest {
 
 	
 	@Test
-	public void testmethod1() throws JSONException, IOException {
+	public void testMethod_11() throws JSONException, IOException {
 
 		String payload = getPayload("gitLabjob.json");
 		JSONObject json = new JSONObject(payload);
@@ -34,7 +34,7 @@ public class firstTest {
 	}
 
 	@Test
-	public void testmethod2() {
+	public void testMethod_12() {
 		assertTrue(true);
 	}
 
@@ -63,124 +63,124 @@ public class firstTest {
 
 	}
 	@Test
-	public void testmethod1() {
+	public void testMethod_11() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod2() {
+	public void testMethod_12() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod3() {
+	public void testMethod_13() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod4() {
+	public void testMethod_14() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod5() {
+	public void testMethod_15() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod6() {
+	public void testMethod_16() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod7() {
+	public void testMethod_17() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod8() {
+	public void testMethod_18() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod9() {
+	public void testMethod_19() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod10() {
+	public void testMethod_110() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod11() {
+	public void testMethod_111() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod12() {
+	public void testMethod_112() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod13() {
+	public void testMethod_113() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod14() {
+	public void testMethod_114() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod15() {
+	public void testMethod_115() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod16() {
+	public void testMethod_116() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod17() {
+	public void testMethod_117() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod18() {
+	public void testMethod_118() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod19() {
+	public void testMethod_119() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod20() {
+	public void testMethod_120() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod21() {
+	public void testMethod_121() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod22() {
+	public void testMethod_122() {
 		assertTrue(true);
 	}
 
 	@Test
-	public void testmethod23() {
+	public void testMethod_123() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod24() {
+	public void testMethod_124() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod25() {
+	public void testMethod_125() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod26() {
+	public void testMethod_126() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod28() {
+	public void testMethod_128() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod27() {
+	public void testMethod_127() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod29() {
+	public void testMethod_129() {
 		assertTrue(true);
 	}
 	@Test
-	public void testmethod30() {
+	public void testMethod_130() {
 		assertTrue(true);
 	}
 	@Test
