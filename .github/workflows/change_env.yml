@@ -1,9 +1,6 @@
 name: change_env
 
-on:
-  schedule:
-    - cron: 30 5 * * 6
-  workflow_dispatch:
+on: push
 
 jobs:
   build:
