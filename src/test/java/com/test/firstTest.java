@@ -63,14 +63,6 @@ public class firstTest {
 
 	}
 	@Test
-	public void testMethod_11() {
-		assertTrue(true);
-	}
-	@Test
-	public void testMethod_12() {
-		assertTrue(true);
-	}
-	@Test
 	public void testMethod_13() {
 		assertTrue(true);
 	}
